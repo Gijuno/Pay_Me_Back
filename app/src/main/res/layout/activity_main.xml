@@ -1,18 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#EDEEF5">
 
-    <TextView
+    <LinearLayout
+        android:paddingTop="40dp"
+        android:paddingLeft="35dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="19dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="13pt"
+                    android:text="김슬호"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:textSize="8pt"
+                    android:text="님"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="어서오세요 고갱님 자주 찾아주세요^^"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- margin left,right 35dp / margin top 16dp-->
+        <EditText
+            android:hint="sexy"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/text_underbar"
+            android:id="@+id/name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
