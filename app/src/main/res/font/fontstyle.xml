@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <font
+        android:font="@font/notosanskr_bold_hestia"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        app:font="@font/notosanskr_bold_hestia"
+        app:fontStyle="normal"
+        app:fontWeight="400"
+        tools:ignore="UnusedAttribute"/>
+
+    <font
+        android:font="@font/notosanskr_light_hestia"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        app:font="@font/notosanskr_light_hestia"
+        app:fontStyle="normal"
+        app:fontWeight="400"
+        tools:ignore="UnusedAttribute"/>
+
+    <font
+        android:font="@font/notosanskr_medium_hestia"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        app:font="@font/notosanskr_bold_hestia"
+        app:fontStyle="normal"
+        app:fontWeight="400"
+        tools:ignore="UnusedAttribute"/>
+    ...
+</font-family>

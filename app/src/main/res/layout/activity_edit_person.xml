@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#EDEEF5">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingTop="40dp"
+            android:paddingLeft="35dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_baseline_account_circle_24"
+                android:layout_width="70dp"
+                android:layout_height="70dp"/>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginLeft="19dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:fontFamily="@font/notosanskr_bold_hestia"
+                        android:textColor="@color/dark_text"
+                        android:textStyle="bold"
+                        android:textSize="13pt"
+                        android:text="김슬호"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:fontFamily="@font/notosanskr_medium_hestia"
+                        android:textColor="@color/light_text"
+                        android:textStyle="normal"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="8pt"
+                        android:text="님"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:textSize="5pt"
+                    android:fontFamily="@font/notosanskr_light_hestia"
+                    android:textColor="@color/light_text"
+                    android:text="어서오세요 고갱님 자주 찾아주세요^^"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:elevation="3dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/round_layout"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="43dp">
+
+                <TextView
+                    android:fontFamily="@font/notosanskr_medium_hestia"
+                    android:textColor="@color/dark_text"
+                    android:layout_marginLeft="25dp"
+                    android:layout_gravity="center"
+                    android:textSize="8pt"
+                    android:text="색상"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+
+                    />
+
+                <ImageView
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/ic_baseline_brightness_1_24"
+                    android:layout_gravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:elevation="3dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_layout"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="43dp">
+
+                <TextView
+                    android:fontFamily="@font/notosanskr_medium_hestia"
+                    android:textColor="@color/dark_text"
+                    android:layout_marginLeft="25dp"
+                    android:layout_gravity="center"
+                    android:textSize="8pt"
+                    android:text="나이"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+
+                    />
+
+                <EditText
+                    android:inputType="number"
+                    android:fontFamily="@font/notosanskr_light_hestia"
+                    android:textColorHint="@color/dark_text"
+                    android:layout_gravity="center"
+                    android:id="@+id/age"
+                    android:textSize="6pt"
+                    android:layout_marginRight="1dp"
+                    android:hint="__"
+                    android:background="@null"
+                    android:textCursorDrawable="@drawable/text_underbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:fontFamily="@font/notosanskr_light_hestia"
+                    android:textColor="@color/dark_text"
+                    android:layout_marginRight="25dp"
+                    android:layout_gravity="center"
+                    android:textSize="6pt"
+                    android:text="세"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:elevation="3dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_layout"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="43dp">
+
+                <TextView
+                    android:fontFamily="@font/notosanskr_medium_hestia"
+                    android:textColor="@color/dark_text"
+                    android:layout_marginLeft="25dp"
+                    android:layout_gravity="center"
+                    android:textSize="8pt"
+                    android:text="성별"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+
+                    />
+
+                <TextView
+                    android:fontFamily="@font/notosanskr_light_hestia"
+                    android:textColor="@color/dark_text"
+                    android:layout_marginRight="25dp"
+                    android:layout_gravity="center"
+                    android:textSize="6pt"
+                    android:text="남자"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:elevation="3dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_layout"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="43dp">
+
+                <TextView
+                    android:fontFamily="@font/notosanskr_medium_hestia"
+                    android:textColor="@color/dark_text"
+                    android:layout_marginLeft="25dp"
+                    android:layout_gravity="center"
+                    android:textSize="8pt"
+                    android:text="전화번호"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:fontFamily="@font/notosanskr_light_hestia"
+                    android:textColor="@color/dark_text"
+                    android:layout_marginRight="25dp"
+                    android:layout_gravity="center"
+                    android:textSize="6pt"
+                    android:text="010-8435-3611"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="11"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical"
+                    android:layout_weight="5"
+                    android:background="@drawable/round_layout"
+                    android:elevation="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="64dp">
+
+                    <TextView
+                        android:fontFamily="@font/notosanskr_medium_hestia"
+                        android:textColor="@color/dark_text"
+                        android:textSize="8pt"
+                        android:text="대출일"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"/>
+
+                    <TextView
+                        android:fontFamily="@font/notosanskr_light_hestia"
+                        android:textColor="@color/dark_text"
+                        android:textSize="6pt"
+                        android:text="2018. 11. 24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="35dp"
+                    android:orientation="vertical"
+                    android:layout_weight="5"
+                    android:background="@drawable/round_layout"
+                    android:elevation="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="64dp">
+
+                    <TextView
+                        android:fontFamily="@font/notosanskr_medium_hestia"
+                        android:textColor="@color/dark_text"
+                        android:textSize="8pt"
+                        android:text="상환일"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"/>
+
+                    <TextView
+                        android:fontFamily="@font/notosanskr_light_hestia"
+                        android:textColor="@color/dark_text"
+                        android:textSize="6pt"
+                        android:text="2018. 11. 24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/notosanskr_medium_hestia"
+                    android:text="메모"
+                    android:textColor="@color/dark_text"
+                    android:textSize="8pt" />
+
+                <LinearLayout
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/round_layout"
+                    android:elevation="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <EditText
+                        android:gravity="top"
+                        android:layout_margin="10dp"
+                        android:hint="ex) 상습범"
+                        android:fontFamily="@font/notosanskr_light_hestia"
+                        android:textColorHint="@color/dark_text"
+                        android:id="@+id/memo"
+                        android:textSize="6pt"
+                        android:background="@null"
+                        android:textCursorDrawable="@drawable/text_underbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:fontFamily="@font/notosanskr_medium_hestia"
+            android:textColor="#FFFFFF"
+            android:textSize="8pt"
+            android:background="@drawable/round_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="26dp"
+            android:text="완료"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
