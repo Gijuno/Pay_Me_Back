@@ -78,6 +78,7 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
+                android:id="@+id/edit_color_layout"
                 android:elevation="3dp"
                 android:orientation="horizontal"
                 android:layout_marginTop="19dp"
@@ -107,6 +108,7 @@
                     />
 
                 <ImageView
+                    android:id="@+id/edit_color_select"
                     android:layout_marginRight="25dp"
                     android:src="@drawable/ic_baseline_brightness_1_24"
                     android:layout_gravity="center"
@@ -117,6 +119,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/edit_age_layout"
                 android:elevation="3dp"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/round_layout"
@@ -145,11 +148,11 @@
                     />
 
                 <EditText
+                    android:id="@+id/eidt_age_edittext"
                     android:inputType="number"
                     android:fontFamily="@font/notosanskr_light_hestia"
                     android:textColorHint="@color/dark_text"
                     android:layout_gravity="center"
-                    android:id="@+id/age"
                     android:textSize="6pt"
                     android:layout_marginRight="1dp"
                     android:hint="__"
@@ -172,6 +175,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/edit_sex_layout"
                 android:elevation="3dp"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/round_layout"
@@ -199,20 +203,38 @@
 
                     />
 
-                <TextView
+                <Button
+                    android:paddingLeft="5dp"
+                    android:text="남자"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/edit_sexbtn_1"
+                    android:background="@drawable/sex_button"
+                    android:layout_width="48dp"
+                    android:layout_height="25dp"
                     android:fontFamily="@font/notosanskr_light_hestia"
                     android:textColor="@color/dark_text"
+                    android:textSize="6pt"/>
+
+                <Button
+                    android:paddingRight="5dp"
                     android:layout_marginRight="25dp"
+                    android:gravity="center"
                     android:layout_gravity="center"
+                    android:id="@+id/edit_sexbtn_2"
+                    android:background="@drawable/sex_button2"
+                    android:layout_width="48dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/notosanskr_light_hestia"
+                    android:textColor="@color/dark_text"
                     android:textSize="6pt"
-                    android:text="남자"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:text="여자"/>
 
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/edit_phone_layout"
                 android:elevation="3dp"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/round_layout"
@@ -238,6 +260,7 @@
                     android:layout_weight="1" />
 
                 <TextView
+                    android:id="@+id/edit_phone_edittext"
                     android:fontFamily="@font/notosanskr_light_hestia"
                     android:textColor="@color/dark_text"
                     android:layout_marginRight="25dp"

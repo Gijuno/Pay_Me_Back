@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/APPTheme.NoActionBar">
-        <activity android:name=".Add_personActivity"></activity>
+        <activity android:name=".test"></activity>
+        <activity android:name=".Add_personActivity" />
         <activity android:name=".Edit_personActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -19,5 +19,10 @@ class MainActivity : AppCompatActivity() {
             val secondIntent = Intent(this, Edit_personActivity::class.java)
             startActivity(secondIntent)
         }
+
+        Goto_test.setOnClickListener {
+            val thirdIntent = Intent(this, test::class.java)
+            startActivity(thirdIntent)
+        }
     }
 }
