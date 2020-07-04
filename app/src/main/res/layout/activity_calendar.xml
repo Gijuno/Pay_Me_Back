@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarActivity"
+    android:background="#0E0E0E"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </LinearLayout>
+
+    <com.kizitonwose.calendarview.CalendarView
+        android:id="@+id/mycalendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cv_hasBoundaries="true"
+        app:cv_orientation="horizontal"
+        app:cv_scrollMode="paged"
+        app:cv_outDateStyle="endOfGrid"
+        app:cv_dayViewResource="@layout/calendar_day_layout"/>
+
+</LinearLayout>

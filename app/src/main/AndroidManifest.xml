@@ -3,13 +3,16 @@
     package="com.gijuno.paymeback">
 
     <application
+        android:name=".PayMeBack"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/APPTheme.NoActionBar">
-        <activity android:name=".test"></activity>
+        <activity android:name=".CalendarActivity"></activity>
+        <activity android:name=".BillActivity" />
+        <activity android:name=".test" />
         <activity android:name=".Add_personActivity" />
         <activity android:name=".Edit_personActivity" />
         <activity android:name=".MainActivity">

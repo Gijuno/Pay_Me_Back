@@ -7,12 +7,13 @@ import android.telephony.PhoneNumberFormattingTextWatcher
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_add_person.*
-import kotlinx.android.synthetic.main.activity_test.*
 
 class Add_personActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_person)
+
+        add_layout_scrollview.scrollBarSize=0
 
         add_name_layout.setOnClickListener {
             add_name_edittext.requestFocus()
@@ -43,6 +44,8 @@ class Add_personActivity : AppCompatActivity() {
             add_sexbtn_1.isSelected = false;
             add_sexbtn_2.isSelected = true;
         }
+
+
 
 
 

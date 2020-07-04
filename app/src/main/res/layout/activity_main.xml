@@ -20,6 +20,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <Button
+        android:text="Go To Calendar Activity"
+        android:id="@+id/Goto_Calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 
     <Button
         android:text="Go To Test"

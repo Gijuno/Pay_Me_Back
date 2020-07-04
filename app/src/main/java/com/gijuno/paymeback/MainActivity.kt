@@ -20,9 +20,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(secondIntent)
         }
 
-        Goto_test.setOnClickListener {
-            val thirdIntent = Intent(this, test::class.java)
+        Goto_Calendar.setOnClickListener {
+            val thirdIntent = Intent(this, CalendarActivity::class.java)
             startActivity(thirdIntent)
         }
+
     }
 }
