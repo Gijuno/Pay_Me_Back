@@ -9,9 +9,11 @@
     android:background="#EDEEF5">
 
     <ScrollView
+        android:orientation="vertical"
         android:id="@+id/add_layout_scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
 
         <LinearLayout
             android:orientation="vertical"
@@ -142,7 +144,8 @@
                         />
 
                     <EditText
-                        android:gravity="end"
+                        android:gravity="right"
+                        android:ellipsize="end"
                         android:fontFamily="@font/notosanskr_light_hestia"
                         android:textColorHint="@color/dark_text"
                         android:layout_gravity="center"
@@ -300,6 +303,7 @@
                         android:layout_weight="1" />
 
                     <EditText
+                        android:gravity="right"
                         android:id="@+id/add_phone_edittext"
                         android:background="@null"
                         android:textCursorDrawable="@drawable/text_underbar"
@@ -447,33 +451,37 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_marginTop="26dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:fontFamily="@font/notosanskr_medium_hestia"
+                    android:textColor="#FFFFFF"
+                    android:textSize="8pt"
+                    android:background="@drawable/round_button"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="26dp"
+                    android:text="완료"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"/>
+
+            </LinearLayout>
+
         </LinearLayout>
+
+
 
 
     </ScrollView>
 
 
 
-    <LinearLayout
-        android:gravity="center"
-        android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <Button
-            android:fontFamily="@font/notosanskr_medium_hestia"
-            android:textColor="#FFFFFF"
-            android:textSize="8pt"
-            android:background="@drawable/round_button"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="26dp"
-            android:text="완료"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_width="match_parent"
-            android:layout_height="36dp"/>
-
-    </LinearLayout>
 
 
 </RelativeLayout>

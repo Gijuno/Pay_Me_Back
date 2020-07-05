@@ -10,9 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/APPTheme.NoActionBar">
-        <activity android:name=".CalendarActivity"></activity>
-        <activity android:name=".BillActivity" />
-        <activity android:name=".test" />
+        <activity android:name=".CalendarActivity"
+            android:theme="@style/Theme.myDialog"/>
         <activity android:name=".Add_personActivity" />
         <activity android:name=".Edit_personActivity" />
         <activity android:name=".MainActivity">

@@ -1,29 +1,292 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:id="@+id/calendar_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CalendarActivity"
-    android:background="#0E0E0E"
+    android:background="@drawable/calendar_dialog"
     android:orientation="vertical">
-    
+
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/prev_month"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/ic_baseline_navigate_before_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/this_month"
+                android:layout_marginRight="7dp"
+                android:fontFamily="@font/notosanskr_bold_hestia"
+                android:textColor="@color/dark_text"
+                android:textStyle="bold"
+                android:textSize="13pt"
+                android:text="7월"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginRight="7dp"
+                android:fontFamily="@font/notosanskr_medium_hestia"
+                android:textColor="@color/semi_dark_text"
+                android:textSize="8pt"
+                android:text="/"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/this_year"
+                android:layout_marginRight="18dp"
+                android:fontFamily="@font/notosanskr_medium_hestia"
+                android:textColor="@color/dark_text"
+                android:textSize="8pt"
+                android:text="2020"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/next_month"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/ic_baseline_navigate_next_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="#E6E6E6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/week_text"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/legendText1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="S"
+                    android:textColor="#CC6363"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/legendText2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="M"
+                    android:textColor="#5E5E5E"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/legendText3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="T"
+                    android:textColor="#5E5E5E"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/legendText4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="W"
+                    android:textColor="#5E5E5E"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/legendText5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="T"
+                    android:textColor="#5E5E5E"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/legendText6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="F"
+                    android:textColor="#5E5E5E"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/legendText7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="S"
+                    android:textColor="#6386CC"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#E6E6E6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <com.kizitonwose.calendarview.CalendarView
+            android:id="@+id/mycalendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cv_hasBoundaries="true"
+            app:cv_orientation="horizontal"
+            app:cv_scrollMode="paged"
+            app:cv_outDateStyle="endOfGrid"
+            app:cv_dayViewResource="@layout/calendar_day_layout"/>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:background="#E6E6E6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </LinearLayout>
 
 
     </LinearLayout>
 
-    <com.kizitonwose.calendarview.CalendarView
-        android:id="@+id/mycalendarView"
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cv_hasBoundaries="true"
-        app:cv_orientation="horizontal"
-        app:cv_scrollMode="paged"
-        app:cv_outDateStyle="endOfGrid"
-        app:cv_dayViewResource="@layout/calendar_day_layout"/>
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginRight="18dp"
+                    android:fontFamily="@font/notosanskr_medium_hestia"
+                    android:textColor="@color/dark_text"
+                    android:textSize="8pt"
+                    android:text="대출일 : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/calendar_borrow_date"
+                    android:layout_marginRight="18dp"
+                    android:fontFamily="@font/notosanskr_medium_hestia"
+                    android:textColor="@color/dark_text"
+                    android:textSize="8pt"
+                    android:text="2020-07-04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginRight="18dp"
+                    android:fontFamily="@font/notosanskr_medium_hestia"
+                    android:textColor="@color/dark_text"
+                    android:textSize="8pt"
+                    android:text="상환일 : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/calendar_payback_date"
+                    android:layout_marginRight="18dp"
+                    android:fontFamily="@font/notosanskr_medium_hestia"
+                    android:textColor="@color/dark_text"
+                    android:textSize="8pt"
+                    android:text="2020-07-05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/calendar_save_btn"
+                android:fontFamily="@font/notosanskr_medium_hestia"
+                android:textColor="#FFFFFF"
+                android:textSize="8pt"
+                android:background="@drawable/round_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:text="완료"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
 
 </LinearLayout>

@@ -1,12 +1,18 @@
 package com.gijuno.paymeback
 
+import android.app.Dialog
 import android.content.Context
+import android.content.DialogInterface
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.telephony.PhoneNumberFormattingTextWatcher
 import android.view.inputmethod.InputMethodManager
+import android.widget.LinearLayout
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_add_person.*
+import kotlinx.android.synthetic.main.activity_calendar.*
 
 class Add_personActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,10 +52,10 @@ class Add_personActivity : AppCompatActivity() {
         }
 
 
-
-
-
-
+        add_borrow_date_layout.setOnClickListener {
+            val Intent = Intent(this, CalendarActivity::class.java)
+            startActivity(Intent)
+        }
 
     }
 }
